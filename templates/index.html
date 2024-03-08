@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asset List</title>
+</head>
+<body>
+    <h1>Assets</h1>
+    {% if data %}
+        {% for asset in data %}
+            <div>
+                <h2>{{ asset.Name or 'Unnamed Asset' }}</h2>
+                <p>ID: {{ asset.Id }}</p>
+                <p>Status: {{ asset.Status }}</p>
+                <p>Family: {{ asset.Family }}</p>
+                <p>Type: {{ asset.Type }}</p>
+                <p>Responding: {{ asset.Responding }}</p>
+                <p>PagedMemorySize: {{asset.PagedMemorySize}}</p>
+                <p>TotalProcessorTime: {{asset.TotalProcessorTime}}</p>
+                <p>Threads: {{asset.Threads}}</p>
+                <div>
+                    <h3>CImage</h3>
+                    <img src="data:image/png;base64,{{ asset.CImage }}" alt="CImage">
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No data available.</p>
+    {% endif %}
+</body>
+</html>
