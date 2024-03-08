@@ -1,7 +1,7 @@
 
-# CorefluxIoTDataDisplay
+# Coreflux Edge Monitor Demo
 
-CorefluxIoTDataDisplay is a demonstration project that visualizes real-time data from IoT edge devices. Utilizing Flask for the web interface and Paho MQTT for subscribing to topics, it showcases how data sent to a Coreflux MQTT broker can be securely received and displayed. This project is perfect for learning how to integrate IoT device data with web technologies for real-time monitoring and visualization.
+Coreflux Edge Monitor Demo is a demonstration project that visualizes real-time data from IoT edge devices. Utilizing Flask for the web interface and Paho MQTT for subscribing to topics, it showcases how data sent to a Coreflux MQTT broker can be securely received and displayed. This project is perfect for learning how to integrate IoT device data with web technologies for real-time monitoring and visualization.
 
 ## Features
 
